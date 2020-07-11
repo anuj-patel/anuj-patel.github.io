@@ -21,9 +21,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-third">
     
       <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img class="w3-circle" src="avatar_window.jpg" style="width:100%" alt="Avatar">
-            <h2 class="w3-center">Anuj Patel</h2>
+        <div class="w3-display-container w3-center">
+          <img class="w3-circle" src="avatar_window.jpg" style="width:50%" alt="Avatar">
+          <h2>Anuj Patel</h2>
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
@@ -51,21 +51,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
           <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Gujarati</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:85%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-          </div>
-          <br>
         </div>
       </div><br>
 
@@ -88,14 +73,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h5 class="w3-opacity"><b>Associate Software Engineer / F(x) Data Labs</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
           <div class="w3-container">
-            <p class="w3-opacity"><b><a href="https://htree.plus/#products" target="_blank">H+Tree</a></b></p>
-            <p>H+Tree is a research based project of F(x) Data Labs. It is supposed to speed up the databases upto 300%, increasing the capacity of the data server upto 3 times compared to the existing B+ Tree. This is written in C++.</p>
-            <hr>
+            <p class="w3-opacity"><b><button onclick="accordion('h+tree')" class="w3-btn w3-block w3-teal w3-round w3-left-align">H+Tree</button></b></p>
+            <div id="h+tree" class="w3-container w3-hide">
+              <p><a href="https://htree.plus/#products" target="_blank">H+Tree</a> is a research based project of F(x) Data Labs. It is supposed to speed up the databases upto 300%, increasing the capacity of the data server upto 3 times compared to the existing B+ Tree. This is written in C++.</p>
+            </div>
           </div>
           <div class="w3-container">
-            <p class="w3-opacity"><b>Palpebra Air</b></p>
-            <p>Object Detection in web-app</p>
-            <p>A web-app in which a user inputs videos/images and then the user can search objects in these videos/images by typing in the name of objects. The application will show the image or video (timestamp) containing the object. This web-app used TensorFlow, OpenCV, MySQL and Flask.</p>
+            <p class="w3-opacity"><b><button onclick="accordion('palpebra')" class="w3-btn w3-block w3-teal w3-round w3-left-align">Palpebra Air</button></b></p>
+            <div id="palpebra" class="w3-container w3-hide">
+              <p>Object Detection in web-app</p>
+              <p>A web-app in which a user inputs videos/images and then the user can search objects in these videos/images by typing in the name of objects. The application will show the image or video (timestamp) containing the object. This web-app used TensorFlow, OpenCV, MySQL and Flask.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -103,7 +91,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-tasks fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><a href="https://github.com/mihir-1997/CalorieDetection" target="_blank">Calorie Intake Detection & Guide to Food</a></b></h5>
+          <h5 class="w3-opacity"><b><a href="https://github.com/mihir-1997/CalorieDetection#calorie-detection-and-guide-to-food" target="_blank">Calorie Intake Detection & Guide to Food</a></b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2018 - April 2019</h6>
           <p>An Android application to find calorie information from food items by capturing an image.</p>
         </div>
@@ -114,7 +102,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h5 class="w3-opacity"><b><a href="http://ldce.ac.in" target="_blank">L. D. College of Engineering</a></b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2015 - June 2019</h6>
-          <p>BE - IT</p>
+          <p>BE - Information Technology</p>
           <p>Started exploring computer science, programming and software engineering world.</p>
         </div>
       </div>
@@ -129,13 +117,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Connect with me.</p>
-  <a href="https://github.com/anuj-patel"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <p>Connect with me</p>
   <a href="https://www.linkedin.com/in/anujnpatel"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://github.com/anuj-patel"><i class="fa fa-github w3-hover-opacity"></i></a>
   <a href="https://twitter.com/anujp360"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
+<script>
+  function accordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 </body>
 </html>
 
